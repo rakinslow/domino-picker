@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darksalmon;
+}
+
+body > h1 {
+ color: white;
+
+ display: flex;
+ flex-direction: row;
+ list-style: wrap;
+
+ 
+}
+.domino-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.domino-list > li {
+    list-style: none;
+    font-size: 5rem;
+    transition: transform 0.5s;
+  
+}
+
+.domino-list > li:hover {
+  transform: scale(1.5); rotate: (0.5turn);
+
+}
+
+.selected {
+    display:none;
+    /*visibility: hidden;*/ /*( you do not need all the time)*/
+    color: white;
+    filter: drop-shadow(0 0 0.25rem white);
+}
+
+.hidden {
+    display: none;
+    
+
+
+}
