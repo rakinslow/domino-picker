@@ -15,13 +15,13 @@ let dominoList = document.querySelectorAll(".domino-list > li")
 console.log(dominoList)
 
 let firstIndex = 0
-let lastIndex = dominoList.lenght - 1
+let lastIndex = dominoList.length - 1
   // I want a random number between firstIndex and lastIndex
   let randomIndex = getRandomNumber (firstIndex , lastIndex)
   let randomDominoElement =  dominoList[randomIndex]
 console.log(randomDominoElement)
 
- randomDominoElement.classList.add("active")
+ randomDominoElement.classList.add("selected")
  
  
  

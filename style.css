@@ -1,6 +1,14 @@
-* {
-    box-sizing: border-box;
+* { 
+    box-sizing: border-box; 
 }
+
+main > .domino {     
+    list-style-type: none;     
+    font-size: 5rem;     
+    transition: transform 0.5s;     
+    color: rebeccapurple;
+}
+
 
 body {
     background-color: darksalmon;
@@ -12,6 +20,7 @@ body > h1 {
  display: flex;
  flex-direction: row;
  list-style: wrap;
+
 
  
 }
@@ -29,12 +38,12 @@ body > h1 {
 }
 
 .domino-list > li:hover {
-  transform: scale(1.5); rotate: (0.5turn);
+  transform: scale(1.5) rotate(0.5turn);
 
 }
 
 .selected {
-    display:none;
+    
     /*visibility: hidden;*/ /*( you do not need all the time)*/
     color: white;
     filter: drop-shadow(0 0 0.25rem white);
